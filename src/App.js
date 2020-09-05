@@ -12,8 +12,8 @@ function App() {
       <Navbar/>
       <Switch>
       <Route path="/createboard" component={Create}/>
-      <Route path="/board/:boardid" component={Board}/>
-      <Route exact path="*" component={Home}/>
+      {/* <Route path="/board/:boardid" component={Board}/>
+      <Route exact path="*" component={Home}/> */}
       </Switch>
     </Router>
   );
