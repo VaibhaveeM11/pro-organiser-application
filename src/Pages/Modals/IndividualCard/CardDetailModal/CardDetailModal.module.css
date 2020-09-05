@@ -1,0 +1,38 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  min-width: 800px;
+  min-height: 150px;
+  z-index: 2;
+  border-radius: 6px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    min-width: unset;
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .modal {
+    width: 340px;
+  }
+}
+
+
